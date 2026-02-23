@@ -78,7 +78,7 @@ export async function POST(req: Request) {
         }
 
         const response = await xai.chat.completions.create({
-            model: image ? "grok-2-vision-1212" : "grok-2-1212",
+            model: image ? "grok-3" : "grok-3", // Grok-3 usually handles both if integrated, or I'll try grok-3 first.
             messages,
             stream: true,
         });
