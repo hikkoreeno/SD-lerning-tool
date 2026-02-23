@@ -133,7 +133,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                className="glass rounded-3xl p-6 md:p-8 min-h-[500px] relative overflow-hidden"
+                className="glass rounded-3xl p-6 md:p-8 h-[700px] overflow-y-auto relative"
               >
                 {isAnalyzing && !analysis && (
                   <div className="absolute inset-0 flex items-center justify-center bg-black/20 backdrop-blur-sm z-10 rounded-3xl">
